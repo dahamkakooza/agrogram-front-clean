@@ -16,7 +16,8 @@
     "react-toastify": "^9.1.3",
     "axios": "^1.6.0",
     "lucide-react": "^0.288.0",
-    "@agro-gram/api": "file:../../packages/api"
+    "@agro-gram/api": "file:../../packages/api",
+    "@agro-gram/ui": "file:../../packages/ui"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.2.1",
