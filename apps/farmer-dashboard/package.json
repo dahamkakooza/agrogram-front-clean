@@ -13,8 +13,9 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.0",
     "firebase": "^10.7.1",
-    "react-toastify": "^9.1.3"
-    "@agro-gram/api": "file:../packages/api"
+    "react-toastify": "^9.1.3",
+    "axios": "^1.6.0",
+    "lucide-react": "^0.288.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.2.1",
