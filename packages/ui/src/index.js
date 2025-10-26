@@ -49,55 +49,55 @@
 // export {default as RevenueAnalytics} from './components/RevenueAnalytics.jsx'; // Add this line
 import React from 'react';
 
-// Create mock components for ALL exports
-export const Button = ({ children, ...props }) => <button {...props}>{children}</button>;
-export const Card = ({ children, ...props }) => <div {...props}>{children}</div>;
-export const Input = (props) => <input {...props} />;
-export const LoadingSpinner = (props) => <div {...props}>Loading...</div>;
-export const Modal = ({ children, ...props }) => <div {...props}>{children}</div>;
-export const Select = (props) => <select {...props} />;
-export const Tabs = ({ children, ...props }) => <div {...props}>{children}</div>;
-export const TextArea = (props) => <textarea {...props} />;
-export const Alert = ({ children, ...props }) => <div {...props}>{children}</div>;
-export const Badge = ({ children, ...props }) => <span {...props}>{children}</span>;
-export const DatePicker = (props) => <input type="date" {...props} />;
-export const MarketPriceTicker = (props) => <div {...props}>Market Prices</div>;
-export const WeatherWidget = (props) => <div {...props}>Weather</div>;
-export const Chart = (props) => <div {...props}>Chart</div>;
-export const DataGrid = (props) => <div {...props}>Data Grid</div>;
-export const InventoryTracker = (props) => <div {...props}>Inventory</div>;
-export const POSIntegration = (props) => <div {...props}>POS</div>;
-export const ProductCarousel = (props) => <div {...props}>Products</div>;
-export const RecommendationEngine = (props) => <div {...props}>Recommendations</div>;
-export const HealthMonitor = (props) => <div {...props}>Health</div>;
-export const OfflineSupport = (props) => <div {...props}>Offline</div>;
-export const EquipmentTracker = (props) => <div {...props}>Equipment</div>;
-export const MaintenanceScheduler = (props) => <div {...props}>Maintenance</div>;
-export const InventoryManager = (props) => <div {...props}>Inventory Mgmt</div>;
-export const SalesAnalytics = (props) => <div {...props}>Sales</div>;
-export const DocumentViewer = (props) => <div {...props}>Document</div>;
-export const DocumentManager = (props) => <div {...props}>Doc Manager</div>;
-export const BudgetTracker = (props) => <div {...props}>Budget</div>;
-export const MultiMonitorSupport = (props) => <div {...props}>Multi Monitor</div>;
-export const SpeechToText = (props) => <div {...props}>Speech</div>;
-export const TextToSpeech = (props) => <div {...props}>Text Speech</div>;
-export const ComplianceTracker = (props) => <div {...props}>Compliance</div>;
-export const ContractManager = (props) => <div {...props}>Contract</div>;
-export const FleetTracker = (props) => <div {...props}>Fleet</div>;
-export const RouteOptimizer = (props) => <div {...props}>Route</div>;
-export const MobileWorkforce = (props) => <div {...props}>Mobile</div>;
-export const ServiceTracker = (props) => <div {...props}>Service</div>;
-export const PortfolioManager = (props) => <div {...props}>Portfolio</div>;
-export const RiskAssessment = (props) => <div {...props}>Risk</div>;
-export const CaseManager = (props) => <div {...props}>Case</div>;
-export const KnowledgeBase = (props) => <div {...props}>Knowledge</div>;
-export const CaseTracker = (props) => <div {...props}>Case Track</div>;
-export const MarketInsights = (props) => <div {...props}>Market</div>;
-export const PriceIntelligence = (props) => <div {...props}>Price Intel</div>;
-export const SystemMonitor = (props) => <div {...props}>System</div>;
-export const UserManagement = (props) => <div {...props}>Users</div>;
-export const BusinessIntelligence = (props) => <div {...props}>Business Intel</div>;
-export const RevenueAnalytics = (props) => <div {...props}>Revenue</div>;
+// Create mock components for ALL exports using React.createElement
+export const Button = ({ children, ...props }) => React.createElement('button', props, children);
+export const Card = ({ children, ...props }) => React.createElement('div', props, children);
+export const Input = (props) => React.createElement('input', props);
+export const LoadingSpinner = (props) => React.createElement('div', props, 'Loading...');
+export const Modal = ({ children, ...props }) => React.createElement('div', props, children);
+export const Select = (props) => React.createElement('select', props);
+export const Tabs = ({ children, ...props }) => React.createElement('div', props, children);
+export const TextArea = (props) => React.createElement('textarea', props);
+export const Alert = ({ children, ...props }) => React.createElement('div', props, children);
+export const Badge = ({ children, ...props }) => React.createElement('span', props, children);
+export const DatePicker = (props) => React.createElement('input', { type: 'date', ...props });
+export const MarketPriceTicker = (props) => React.createElement('div', props, 'Market Prices');
+export const WeatherWidget = (props) => React.createElement('div', props, 'Weather');
+export const Chart = (props) => React.createElement('div', props, 'Chart');
+export const DataGrid = (props) => React.createElement('div', props, 'Data Grid');
+export const InventoryTracker = (props) => React.createElement('div', props, 'Inventory');
+export const POSIntegration = (props) => React.createElement('div', props, 'POS');
+export const ProductCarousel = (props) => React.createElement('div', props, 'Products');
+export const RecommendationEngine = (props) => React.createElement('div', props, 'Recommendations');
+export const HealthMonitor = (props) => React.createElement('div', props, 'Health');
+export const OfflineSupport = (props) => React.createElement('div', props, 'Offline');
+export const EquipmentTracker = (props) => React.createElement('div', props, 'Equipment');
+export const MaintenanceScheduler = (props) => React.createElement('div', props, 'Maintenance');
+export const InventoryManager = (props) => React.createElement('div', props, 'Inventory Mgmt');
+export const SalesAnalytics = (props) => React.createElement('div', props, 'Sales');
+export const DocumentViewer = (props) => React.createElement('div', props, 'Document');
+export const DocumentManager = (props) => React.createElement('div', props, 'Doc Manager');
+export const BudgetTracker = (props) => React.createElement('div', props, 'Budget');
+export const MultiMonitorSupport = (props) => React.createElement('div', props, 'Multi Monitor');
+export const SpeechToText = (props) => React.createElement('div', props, 'Speech');
+export const TextToSpeech = (props) => React.createElement('div', props, 'Text Speech');
+export const ComplianceTracker = (props) => React.createElement('div', props, 'Compliance');
+export const ContractManager = (props) => React.createElement('div', props, 'Contract');
+export const FleetTracker = (props) => React.createElement('div', props, 'Fleet');
+export const RouteOptimizer = (props) => React.createElement('div', props, 'Route');
+export const MobileWorkforce = (props) => React.createElement('div', props, 'Mobile');
+export const ServiceTracker = (props) => React.createElement('div', props, 'Service');
+export const PortfolioManager = (props) => React.createElement('div', props, 'Portfolio');
+export const RiskAssessment = (props) => React.createElement('div', props, 'Risk');
+export const CaseManager = (props) => React.createElement('div', props, 'Case');
+export const KnowledgeBase = (props) => React.createElement('div', props, 'Knowledge');
+export const CaseTracker = (props) => React.createElement('div', props, 'Case Track');
+export const MarketInsights = (props) => React.createElement('div', props, 'Market');
+export const PriceIntelligence = (props) => React.createElement('div', props, 'Price Intel');
+export const SystemMonitor = (props) => React.createElement('div', props, 'System');
+export const UserManagement = (props) => React.createElement('div', props, 'Users');
+export const BusinessIntelligence = (props) => React.createElement('div', props, 'Business Intel');
+export const RevenueAnalytics = (props) => React.createElement('div', props, 'Revenue');
 
 // Mock theme
 export const theme = {
@@ -120,4 +120,3 @@ export default {
   RevenueAnalytics,
   theme
 };
-// // // Add more exports as needed
