@@ -5,16 +5,14 @@
   "scripts": {
     "dev": "vite",
     "build": "npx vite build",
-    "preview": "vite preview",
+    "preview": "vite preview", 
     "serve": "vite preview --port 3000"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.0",
-    "firebase": "^10.7.1",
-    "@agro-gram/api": "*",
-    "@agro-gram/ui": "*"
+    "firebase": "^10.7.1"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.2.1",
